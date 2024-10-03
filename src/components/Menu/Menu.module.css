@@ -1,0 +1,81 @@
+.menu {
+	position: fixed;
+	top: 40px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 85%;
+	max-width: 1200px;
+	z-index: 1;
+}
+
+.menu__logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu__logo-text {
+	color: rgb(27, 28, 87);
+	font-family: Lexend;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px;
+	letter-spacing: 0px;
+	text-align: left;
+	text-transform: capitalize;
+}
+
+.menu__logo-img {
+	display: block;
+	margin-right: 12px;
+}
+
+.menu__buttons {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 507px;
+	width: 100%;
+}
+
+.menu__button-left {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button-left__ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.button-left__li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.button-left__a {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu__button-right {
+	color: rgb(4, 120, 87);
+	font-family: Lexend;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 22px;
+	letter-spacing: 0px;
+	text-align: left;
+	padding: 12px 24px 12px 24px;
+	border-radius: 32px;
+	background: rgb(209, 250, 229);
+}

@@ -1,0 +1,27 @@
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px 16px;
+	box-sizing: border-box;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 32px;
+	color: rgb(240, 243, 253);
+	font-family: Lexend;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	letter-spacing: 0px;
+	text-align: left;
+	text-transform: capitalize;
+	position: static;
+	margin: 0px 12px;
+	background: rgba(255, 255, 255, 0.1);
+	white-space: nowrap;
+}
+
+.button-img {
+	display: block;
+	padding: 6px 4px;
+	margin-left: 10px;
+}
