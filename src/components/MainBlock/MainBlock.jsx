@@ -45,7 +45,7 @@ function MainBlock() {
     <div className={styles['main']}>
       <div className={styles['main__search-bar']}>
         <h1 className={styles['main__title']}>
-          find the place to live <span> your dreams</span> easily here
+          find the place to <br/>live <span> your dreams</span><br/> easily here
         </h1>
         <p className={styles['main__description']}>
           Everything you need about finding your place to live will be here,

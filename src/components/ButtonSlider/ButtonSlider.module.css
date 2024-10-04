@@ -1,0 +1,38 @@
+.button-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 60px;
+  height: 52px;
+  border-radius: 32px;
+  background: rgb(224, 227, 235);
+}
+
+.button-slider:hover {
+  border-radius: 32px;
+  background: rgb(16, 185, 129);
+}
+.button-slider__left {
+  background-image: url(../../../public/featured-house/button-slider/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.button-slider__left:hover {
+  background-image: url(../../../public/featured-house/button-slider/arrow-left-active.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.button-slider__right {
+  background-image: url(../../../public/featured-house/button-slider/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.button-slider__right:hover {
+  background-image: url(../../../public/featured-house/button-slider/arrow-right-active.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
