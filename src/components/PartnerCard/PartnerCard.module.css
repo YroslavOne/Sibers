@@ -1,0 +1,70 @@
+
+
+.partner-card {
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+	padding: 15px;
+	background: #f7f7f7;
+	border-radius: 8px;
+	align-items: center;
+}
+
+.partner-card__featured {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	grid-column: 2;
+	background: #ffffff;
+	border-radius: 8px;
+	align-items: center;
+}
+
+.partner-card__image {
+	object-fit: cover;
+	border-radius: 8px;
+}
+.partner-card__featured-image{
+
+}
+
+.people-image {
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.partner-card__content {
+	display: flex;
+	flex-direction: column;
+}
+
+.partner-card__title {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+}
+.partner-card__featured-title{
+
+}
+.partner-card__content-description{}
+
+.partner-card__client {
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.people-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.people-info p {
+	margin: 0;
+	font-size: 14px;
+}
+
+.people-info span {
+	color: #888;
+	font-size: 12px;
+}

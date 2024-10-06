@@ -1,4 +1,14 @@
-.slider-navigation{
-    width: 90%;
-    margin-left: 120px;
+.slider-navigation {
+	width: 90%;
+	margin-left: 120px;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.slider-navigation__slider {
+	position: relative;
+}
+.slick-list {
+	padding: 0 20% 0 0;
 }
