@@ -25,3 +25,12 @@
 	padding: 6px 4px;
 	margin-left: 10px;
 }
+@media (max-width: 1200px) {
+	.button {
+		color: black;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	}
+		.button-img {
+			display: none;
+		}
+}

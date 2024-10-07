@@ -1,12 +1,13 @@
 import styles from './PartnerCard.module.css';
+import Clock from '../../../public/partners/clock.png'
 
 function PartnerCard({
   isFeatured,
   image,
   title,
-	description,
+  description,
   clientImage,
-	clientName,
+  clientName,
   readTime,
   date,
 }) {
@@ -25,26 +26,35 @@ function PartnerCard({
         }
       />
       <div className={styles['partner-card__content']}>
-        <h3
-          className={
-            isFeatured
-              ? styles['partner-card__featured-title']
-              : styles['partner-card__title']
-          }
-        >
-          {title}
-        </h3>
-        {isFeatured && (
-          <p className={styles['partner-card__content-description']}>{description}</p>
-        )}
-        <div className={styles['partner-card__client']}>
-          <img src={clientImage} className={styles['people-image']} />
-          <div className={styles['people-info']}>
-            <p>{clientName}</p>
+        <div className={styles['partner-card__people']}>
+          <img
+            src={clientImage}
+            className={styles['partner-card__people-image']}
+          />
+
+          <p className={styles['partner-card__people-p']}>{clientName}</p>
+        </div>
+        <div className={styles['partner-card__text']}>
+          <h3
+            className={
+              isFeatured
+                ? styles['partner-card__featured-title']
+                : styles['partner-card__title']
+            }
+          >
+            {title}
+          </h3>
+          {isFeatured && (
+            <p className={styles['partner-card__content-description']}>
+              {description}
+            </p>
+          )}
+					</div>
+          <div className={styles['partner-card__date']}>
+            <img src={Clock} />
             <span>
               {readTime} | {date}
             </span>
-          </div>
         </div>
       </div>
     </div>

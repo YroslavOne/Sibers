@@ -57,8 +57,7 @@ function Partners() {
         image: People4,
         name: 'Cameron Williamson',
       },
-      title:
-        'The things we need to check when we want to buy a house12 Things to know before buying a house',
+      title: '12 Things to know before buying a house',
       description:
         'Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house',
       date: '25 Apr 2021',
@@ -69,11 +68,15 @@ function Partners() {
 
   return (
     <div className={styles['partners']}>
-      <div>
-        <div></div>
-        <p>See tips and trick from our partnership</p>
+      <div className={styles['partner__name']}>
+        <div className={styles['partner__name-line']}></div>
+        <p className={styles['partner__name-title']}>
+          See tips and trick from our partnership
+        </p>
       </div>
-      <h2>Find out more about selling and buying homes</h2>
+      <h2 className={styles['partner__title']}>
+        Find out more about<br/> selling and buying homes
+      </h2>
       <Button text="More Artikel" />
 
       <div className={styles['partner-card__grid']}>

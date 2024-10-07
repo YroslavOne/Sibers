@@ -1,70 +1,122 @@
+.partners {}
+
 
 
 .partner-card {
 	display: flex;
 	flex-direction: row;
-	gap: 15px;
-	padding: 15px;
-	background: #f7f7f7;
-	border-radius: 8px;
 	align-items: center;
 }
 
 .partner-card__featured {
 	display: flex;
 	flex-direction: column;
-	padding: 20px;
+	padding:0 20px;
 	grid-column: 2;
-	background: #ffffff;
 	border-radius: 8px;
 	align-items: center;
 }
 
 .partner-card__image {
-	object-fit: cover;
-	border-radius: 8px;
-}
-.partner-card__featured-image{
-
+	margin: 0;
+	border-radius: 16px;
+	margin-right: 32px;
 }
 
-.people-image {
-	border-radius: 50%;
-	margin-right: 10px;
+.partner-card__featured-image {
+	border-radius: 16px;
+	margin: 0;
+	margin-bottom: 29px;
 }
 
 .partner-card__content {
 	display: flex;
+	align-items: flex-start;
+	justify-content: center;
 	flex-direction: column;
+}
+
+.partner-card__people {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 12px;
+
+}
+
+.partner-card__people-image {
+	margin-right: 16px;
+}
+
+.partner-card__people-p {
+	color: rgb(60, 69, 99);
+	font-family: Lexend;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
+	letter-spacing: 0px;
+	text-align: left;
+}
+
+.partner-card__text {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 16px;
 }
 
 .partner-card__title {
-	font-size: 16px;
-	font-weight: bold;
 	margin: 0;
+	color: rgb(27, 28, 87);
+	font-family: Lexend;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 32px;
+	letter-spacing: 0px;
+	text-align: left;
+	text-transform: capitalize;
 }
-.partner-card__featured-title{
 
+.partner-card__featured-title {
+	color: rgb(27, 28, 87);
+	font-family: Lexend;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 32px;
+	letter-spacing: 0px;
+	text-align: left;
+	text-transform: capitalize;
+	margin-bottom: 12px;
 }
-.partner-card__content-description{}
 
-.partner-card__client {
+.partner-card__content-description {
+	color: rgb(98, 102, 135);
+	font-family: Lexend;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0px;
+	text-align: left;
+	opacity: 0.75;
+}
+
+.partner-card__date {
 	display: flex;
 	align-items: center;
-	margin-top: 10px;
+	justify-content: center;
+
 }
 
-.people-info {
-	display: flex;
-	flex-direction: column;
+.partner-card__date>img {
+	margin-right: 14px;
+
 }
 
-.people-info p {
-	margin: 0;
+.partner-card__date>span {
+	color: rgb(136, 139, 151);
+	font-family: Lexend;
 	font-size: 14px;
-}
-
-.people-info span {
-	color: #888;
-	font-size: 12px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0px;
+	text-align: left;
 }

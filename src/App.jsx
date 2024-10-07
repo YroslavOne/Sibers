@@ -6,17 +6,19 @@ import BlockGallery from './components/BlockGallery/BlockGallery';
 import Reviews from './components/Reviews/Reviews';
 import Partners from './components/Partners/Partners';
 import Subscription from './components/Subscription/Subscription';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <>
-      <Menu />
+      {/* <Menu /> */}
       <MainBlock />
 			<FeaturedHouse/>
-			<BlockGallery/>
-			<Reviews/>
-			<Partners/>
-      <Subscription/>
+			{/* <BlockGallery/> */}
+			{/* <Reviews/> */}
+			{/* <Partners/> */}
+      {/* <Subscription/> */}
+			{/* <Footer/> */}
     </>
   );
 }
