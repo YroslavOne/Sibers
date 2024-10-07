@@ -1,1 +1,83 @@
-	
+.house-card {
+  width: 340px;
+}
+.house-card__item {
+  position: relative;
+}
+.house-card__icon {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 32px;
+}
+
+.house-card__icon > img {
+  margin-right: 12px;
+}
+.house-card__item-description {
+  font-family: Lexend;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  text-transform: capitalize;
+}
+.house-card__details {
+  margin: 24px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.house-card__details-title {
+  color: rgb(14, 23, 53);
+  font-family: Lexend;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 8px;
+}
+.house-card__details-prise {
+  color: rgb(60, 69, 99);
+  font-family: Lexend;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.house-card__salesman {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.salesman__details {
+  margin-left: 16px;
+}
+.salesman__details-title {
+  color: rgb(14, 23, 53);
+  font-family: Lexend;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+.salesman__details-description {
+  color: rgb(136, 139, 151);
+  font-family: Lexend;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}

@@ -120,9 +120,13 @@ function FeaturedHouse() {
 
   return (
     <div className={styles["featured-house"]}>
-      <p>
-        <span></span> Our Recommendation
+      <div className={styles['featured-house__name']}>
+        <div className={styles['featured-house__name-line']}></div>
+      <p className={styles['featured-house__name-p']}>
+         Our Recommendation
       </p>
+      </div>
+      
       <div className={styles["featured-house__slider"]}>
         <div className={styles["slider__head"]}>
           <h2 className={styles["slider__head-h2"]}>Featured House</h2>

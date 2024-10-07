@@ -1,0 +1,116 @@
+.subscription {
+  width: 100%;
+}
+.subscription-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  background-image: url("../../../public/subscription/background.png");
+  background-repeat: no-repeat;
+  border-radius: 32px;
+  margin: 120px;
+}
+.subscription-content__input {
+  position: relative;
+  margin-top: 32px;
+  margin-bottom: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 496px;
+  padding: 4px 4px 4px 24px;
+  background: rgb(255, 255, 255);
+  border-radius: 32px;
+  box-shadow: 0px 9px 32px 0px rgba(89, 92, 219, 0.05);
+}
+.subscription__h2 {
+  color: rgb(27, 28, 87);
+  font-family: Lexend;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: center;
+  text-transform: capitalize;
+  max-width: 424px;
+  margin-top: 65px;
+}
+.subscription-content__input {
+}
+.subscription-content__input > img {
+}
+.subscription-content__input > input {
+  width: 100%;
+  max-width: 283px;
+  outline: none;
+  border: none;
+  height: 22px;
+  margin-left: 18px;
+  margin-right: 16px;
+  color: rgb(27, 28, 87);
+  font-family: Lexend;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.subscription-content__input > input::placeholder {
+  color: rgb(136, 139, 151);
+}
+.subscription-content__image {
+  position: absolute;
+}
+.subscription-content__image1 {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 24px;
+  left: 44px;
+  top: 38px;
+}
+.subscription-content__image2 {
+  left: 204px;
+  top: 71px;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0px 9px 32px 0px rgba(89, 92, 219, 0.1);
+  border-radius: 50%;
+}
+.subscription-content__image3 {
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0px 9px 32px 0px rgba(89, 92, 219, 0.1);
+  background: url(avatar-6);
+  left: 67px;
+  top: 173px;
+  border-radius: 50%;
+}
+.subscription-content__image4 {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 24px;
+  left: 195px;
+  top: 178px;
+}
+.subscription-content__image5 {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 24px;
+  left: 930px;
+  top: 44px;
+}
+.subscription-content__image6 {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  left: 1082px;
+  top: 107px;
+}
+.subscription-content__image7 {
+  border: 2px solid rgb(255, 255, 255);
+  left: 964px;
+  top: 143px;
+}
+.subscription-content__image8 {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 24px;
+  left: 1072px;
+  top: 197px;
+}

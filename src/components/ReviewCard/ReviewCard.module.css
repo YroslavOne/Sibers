@@ -1,29 +1,96 @@
-.review-card{
+.review-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 136px;
 }
-.review-card__img{
+.review-card__img {
+  border-radius: 8px;
+  background: rgb(196, 196, 196);
+  opacity: 0.7;
+}
+.review-card__window {
+  border-radius: 16px;
+  box-shadow: 0px 9px 32px 0px rgba(89, 92, 219, 0.05);
+  background: rgb(255, 255, 255);
+  bottom: -104px;
+  position: absolute;
+  width: 612px;
+  padding: 32px;
+}
+.review-card__window-title {
+  color: rgb(27, 28, 87);
+  font-family: Lexend;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+}
+.review-card__window-description {
+  color: rgb(98, 102, 135);
+  font-family: Lexend;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+.review-card__window-manager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.window-manager__detail {
+  display: flex;
+  align-items: center;
+}
+.window-manager__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.review-card__window-manager > img {
+  margin-right: 24px;
+}
 
+.review-manager__name {
+  color: rgb(14, 23, 53);
+  font-family: Lexend;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
 }
-.review-card__window{
-
+.review-manager__status {
+  color: rgb(136, 139, 151);
+  font-family: Lexend;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
 }
-.review-card__window-title{
-	
+.review-manager__rating {
+  display: flex;
+  align-items: center;
 }
-.review-card__window-description{
-
+.review-manager__img {
+  margin-right: 18px;
 }
-.review-card__window-manager{
-
-}
-.review-manager__name{
-
-}
-.review-manager__status{
-
-}
-.review-manager__img{
-
-}
-.review-manager__grade{
-
+.review-manager__grade {
+  color: rgb(60, 69, 99);
+  font-family: Lexend;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
 }

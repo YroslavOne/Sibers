@@ -11,7 +11,7 @@ function SliderHouse({sliderRef, houseList}) {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 3.5,
+    slidesToShow: 3.348,
     slidesToScroll: 1,
     arrows: false,
     initialSlide: 0,
@@ -33,6 +33,7 @@ function SliderHouse({sliderRef, houseList}) {
             imageIco={house.icon.img}
             imageSalesman={house.salesman.img}
             nameSalesman={house.salesman.name}
+            description={house.salesman.description}
             price={house.price}
             textIco={house.icon.text}
             title={house.title}

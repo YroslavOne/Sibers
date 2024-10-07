@@ -5,6 +5,7 @@ import FeaturedHouse from './components/FeaturedHouse/FeaturedHouse'
 import BlockGallery from './components/BlockGallery/BlockGallery';
 import Reviews from './components/Reviews/Reviews';
 import Partners from './components/Partners/Partners';
+import Subscription from './components/Subscription/Subscription';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
 			<BlockGallery/>
 			<Reviews/>
 			<Partners/>
+      <Subscription/>
     </>
   );
 }
