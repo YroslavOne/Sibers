@@ -2,37 +2,62 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "./SliderHouse.module.css";
-import HouseCard from '../HouseCard/HouseCard'
+import HouseCard from "../HouseCard/HouseCard";
 
-
-function SliderHouse({sliderRef, houseList}) {
-
+function SliderHouse({ sliderRef, houseList }) {
   var settings = {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 3.348,
+    slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1200,
+        breakpoint: 2560,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 1600,
         settings: {
+          slidesToShow: 3.348,
+          slidesToScroll: 1,
+        },
+      },
+
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          centerMode: true,
           slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          centerMode: true,
+
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 480,
         settings: {
+          centerMode: false,
+
           slidesToShow: 1,
           slidesToScroll: 1,
         },
@@ -40,13 +65,12 @@ function SliderHouse({sliderRef, houseList}) {
     ],
   };
 
-
   return (
-    <div className={styles['slider-navigation']}>
+    <div className={styles["slider-navigation"]}>
       <Slider
         {...settings}
         ref={sliderRef}
-        className={styles['slider-navigation__slider']}
+        className={styles["slider-navigation__slider"]}
       >
         {houseList.map((house, index) => (
           <HouseCard

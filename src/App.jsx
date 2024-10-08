@@ -11,14 +11,14 @@ import Footer from './components/Footer/Footer';
 function App() {
   return (
     <>
-      {/* <Menu /> */}
+      <Menu />
       <MainBlock />
 			<FeaturedHouse/>
-			{/* <BlockGallery/> */}
-			{/* <Reviews/> */}
-			{/* <Partners/> */}
-      {/* <Subscription/> */}
-			{/* <Footer/> */}
+			<BlockGallery/>
+			<Reviews/>
+			<Partners/>
+      <Subscription/>
+			<Footer/>
     </>
   );
 }

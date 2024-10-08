@@ -70,3 +70,14 @@
 .gallery__play-img{
 	margin-left: 2px;
 }
+@media (max-width: 1310px) {
+    .gallery{
+		margin-top: 20px;
+	}
+  }
+
+  @media (max-width: 490px) {
+    .gallery{
+		display: none;
+	}
+  }

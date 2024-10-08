@@ -14,4 +14,5 @@
   line-height: 22px;
   letter-spacing: 0px;
   text-align: left;
+  white-space: nowrap;
 }

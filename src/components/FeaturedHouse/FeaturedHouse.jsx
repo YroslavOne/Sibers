@@ -6,7 +6,7 @@ import ApartmentActive from "../../../public/featured-house/round-apartment-acti
 import Villa from "../../../public/featured-house/round-villa.svg";
 import VillaActive from "../../../public/featured-house/round-villa-active.svg";
 import ButtonHouseSlider from "../ButtonHouseSlider/ButtonHouseSlider.jsx";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import SliderHouse from "../SliderHouse/SliderHouse.jsx";
 import ButtonSlider from "../ButtonSlider/ButtonSlider";
 import Fire from "../../../public/house-card/icon/fire.svg";
@@ -21,26 +21,175 @@ import Salesman2 from "../../../public/house-card/salesman/salesman2.png";
 import Salesman3 from "../../../public/house-card/salesman/salesman3.png";
 import Salesman4 from "../../../public/house-card/salesman/salesman4.png";
 
+const houseList = [
+    
+  {
+    title: "Roselands House",
+    image: House1,
+    price: "35.000.000",
+    icon: {
+      color: "rgb(239, 68, 68)",
+      text: "Popular",
+      img: Fire,
+      background: "rgb(254, 226, 226)",
+    },
+    salesman: {
+      img: Salesman1,
+      name: "Dianne Russell",
+      description: "Manchester, Kentucky",
+    },
+  },
+  {
+    title: "Woodlandside",
+    image: House2,
+    price: "20.000.000",
+    icon: {
+      color: "rgb(29, 78, 216)",
+      text: "New house",
+      img: Home,
+      background: "rgb(219, 234, 254)",
+    },
+    salesman: {
+      img: Salesman2,
+      name: "Robert Fox",
+      description: "Dr. San Jose, South Dakota",
+    },
+  },
+  {
+    title: "The Old Lighthouse",
+    image: House3,
+    price: "44.000.000",
+    icon: {
+      color: "rgb(4, 120, 87)",
+      text: "PopularBest Deals",
+      img: Wallet,
+      background: "rgb(209, 250, 229)",
+    },
+    salesman: {
+      img: Salesman3,
+      name: "Ronald Richards",
+      description: "Santa Ana, Illinois",
+    },
+  },
+  {
+    title: "Cosmo's House",
+    image: House4,
+    price: "22.000.000",
+    icon: {
+      color: "rgb(239, 68, 68)",
+      text: "Popular",
+      img: Fire,
+      background: "rgb(254, 226, 226)",
+    },
+    salesman: {
+      img: Salesman4,
+      name: "Jenny Wilson",
+      description: "Preston Rd. Inglewood, Maine 98380",
+    },
+  },
+];
+
+const houseListTest = [
+  
+  {
+    title: "Cosmo's House",
+    image: House4,
+    price: "22.000.000",
+    icon: {
+      color: "rgb(239, 68, 68)",
+      text: "Popular",
+      img: Fire,
+      background: "rgb(254, 226, 226)",
+    },
+    salesman: {
+      img: Salesman4,
+      name: "Jenny Wilson",
+      description: "Preston Rd. Inglewood, Maine 98380",
+    },
+  },
+    
+  {
+    title: "Roselands House",
+    image: House1,
+    price: "35.000.000",
+    icon: {
+      color: "rgb(239, 68, 68)",
+      text: "Popular",
+      img: Fire,
+      background: "rgb(254, 226, 226)",
+    },
+    salesman: {
+      img: Salesman1,
+      name: "Dianne Russell",
+      description: "Manchester, Kentucky",
+    },
+  },
+  {
+    title: "Woodlandside",
+    image: House2,
+    price: "20.000.000",
+    icon: {
+      color: "rgb(29, 78, 216)",
+      text: "New house",
+      img: Home,
+      background: "rgb(219, 234, 254)",
+    },
+    salesman: {
+      img: Salesman2,
+      name: "Robert Fox",
+      description: "Dr. San Jose, South Dakota",
+    },
+  },
+  {
+    title: "The Old Lighthouse",
+    image: House3,
+    price: "44.000.000",
+    icon: {
+      color: "rgb(4, 120, 87)",
+      text: "PopularBest Deals",
+      img: Wallet,
+      background: "rgb(209, 250, 229)",
+    },
+    salesman: {
+      img: Salesman3,
+      name: "Ronald Richards",
+      description: "Santa Ana, Illinois",
+    },
+  },
+];
+
+const variantHouses = [
+  {
+    icon: House,
+    iconActive: HouseActive,
+    name: "House",
+    content: houseList,
+  },
+  {
+    icon: Villa,
+    iconActive: VillaActive,
+    name: "Villa",
+    content: houseListTest,
+  },
+  {
+    icon: Apartment,
+    iconActive: ApartmentActive,
+    name: "Apartment",
+    content: houseList,
+  },
+];
+
+
+
 function FeaturedHouse() {
   const [active, setActive] = useState("House");
+  const [content, setContent] = useState(houseList);
+  useEffect(() => {
+    const informationForSlider = variantHouses.find((item, index)=>item.name===active)
+    setContent(informationForSlider.content)
+  }, [active]);
   const sliderRef = useRef(null);
-  const variantHouses = [
-    {
-      icon: House,
-      iconActive: HouseActive,
-      name: "House",
-    },
-    {
-      icon: Villa,
-      iconActive: VillaActive,
-      name: "Villa",
-    },
-    {
-      icon: Apartment,
-      iconActive: ApartmentActive,
-      name: "Apartment",
-    },
-  ];
+  
 
   const handleNext = () => {
     sliderRef.current.slickNext();
@@ -50,73 +199,7 @@ function FeaturedHouse() {
     sliderRef.current.slickPrev();
   };
 
-  const houseList = [
-    
-    {
-      title: "Roselands House",
-      image: House1,
-      price: "35.000.000",
-      icon: {
-        color: "rgb(239, 68, 68)",
-        text: "Popular",
-        img: Fire,
-        background: "rgb(254, 226, 226)",
-      },
-      salesman: {
-        img: Salesman1,
-        name: "Dianne Russell",
-        description: "Manchester, Kentucky",
-      },
-    },
-    {
-      title: "Woodlandside",
-      image: House2,
-      price: "20.000.000",
-      icon: {
-        color: "rgb(29, 78, 216)",
-        text: "New house",
-        img: Home,
-        background: "rgb(219, 234, 254)",
-      },
-      salesman: {
-        img: Salesman2,
-        name: "Robert Fox",
-        description: "Dr. San Jose, South Dakota",
-      },
-    },
-    {
-      title: "The Old Lighthouse",
-      image: House3,
-      price: "44.000.000",
-      icon: {
-        color: "rgb(4, 120, 87)",
-        text: "PopularBest Deals",
-        img: Wallet,
-        background: "rgb(209, 250, 229)",
-      },
-      salesman: {
-        img: Salesman3,
-        name: "Ronald Richards",
-        description: "Santa Ana, Illinois",
-      },
-    },
-    {
-      title: "Cosmo's House",
-      image: House4,
-      price: "22.000.000",
-      icon: {
-        color: "rgb(239, 68, 68)",
-        text: "Popular",
-        img: Fire,
-        background: "rgb(254, 226, 226)",
-      },
-      salesman: {
-        img: Salesman4,
-        name: "Jenny Wilson",
-        description: "Preston Rd. Inglewood, Maine 98380",
-      },
-    },
-  ];
+  
 
   return (
     <div className={styles["featured-house"]}>
@@ -150,7 +233,7 @@ function FeaturedHouse() {
             <ButtonSlider onClick={handleNext} left={false} />
           </div>
         </div>
-        <SliderHouse sliderRef={sliderRef} houseList={houseList}/>
+        <SliderHouse sliderRef={sliderRef} houseList={content}/>
       </div>
     </div>
   );

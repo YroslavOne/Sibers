@@ -62,3 +62,10 @@
 	display: flex;
 	align-items: flex-start;
 }
+@media (max-width: 1200px) {
+    .partner-card__grid{
+		display: flex;
+		flex-direction: column;
+		gap: 42px;
+	}
+  }

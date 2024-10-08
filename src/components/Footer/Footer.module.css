@@ -111,3 +111,20 @@
 .footer__menu-link:last-child {
 	margin: 0;
 }
+@media (max-width: 950px) {
+	.footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: column;
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 120px 120px 120px;
+	}
+	.footer__menu{
+		flex-direction: column;
+		margin-top: 20px;
+		gap: 20px;
+	}
+    
+  }
